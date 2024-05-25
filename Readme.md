@@ -1,6 +1,17 @@
 # Scraper for etsy.com
 [![python][python-badge]][python-link][![jupyter][jupyter-badge]][jupyter-link][![vsc][vsc-badge]][vsc-link]
-### The scraper reads front-end html information, prase it using lxml, cleans date and store it in a dictionary until it is completed and pass it to txt file. From there via a Jupyter Notebook, Frames the output and run a brief analysis.
+### The scraper reads front-end html information, prase it using lxml, cleans date and store it in a dictionary until it is completed and pass it to txt file. From there via a Jupyter Notebook, Frames the output and run a brief analysis. 
+
+1. Opens the browser with the given url
+2. generates a search
+3. the scraper scrapes the first listing
+4. navigate to its detail page view
+5. Scrapes detail page values
+6. Append values in a lsit
+7. Creates a blank python dictionary
+8. Fills up the dictionary by accessing values in the list
+9. Pass the dictionary as a string to a txt. file
+10. Repeats the same steps for the next listing in the search results
 
 
 ![](header.png)
@@ -58,7 +69,7 @@ Main libraries in main script:
 
 ## Note
 
-Websites change constantly, some dinamic values can could have change and then the scraper wit not work. Also bot detectation mechanism as puzzel, could block the scraper to run.
+Websites change constantly, some dinamic values could have changed which breaks the scraper. Also bot detectation mechanism as puzzel, could block the scraper to run.
 
 ## Contributing
 
